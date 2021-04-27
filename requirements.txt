@@ -30,6 +30,6 @@ urllib3==1.25.8
 webencodings==0.5.1
 Werkzeug==1.0.1
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.6.0+cpu
+torch==1.7.0+cpu
 -f https://download.pytorch.org/whl/torch_stable.html
 torchvision==0.7.0+cpu
