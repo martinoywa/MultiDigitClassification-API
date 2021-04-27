@@ -7,8 +7,18 @@ from datetime import datetime
 
 from src.inference import prediction
 
+from pathlib import Path
+
 
 app = Flask(__name__)
+
+
+# download the model file
+model_url = "https://github.com/martinoywa/MultiDigitClassification-API/blob/master/src/checkpoints/model-54000.pth"
+model_file = requests.get(model_url)
+model_path = Path("src/checkpoints/model-54000.pth")
+with open(model_path, "wb") as f:
+    f.write(model_file.content)
 
 
 @app.route('/api/v1/predict/<path:url>')
