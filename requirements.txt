@@ -10,6 +10,7 @@ distro==1.4.0
 Flask==1.1.2
 html5lib==1.0.1
 idna==2.8
+gunicorn
 ipaddr==2.2.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
